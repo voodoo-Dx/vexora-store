@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#070b13">
+<meta name="description" content="VEXORA — متجر بطاقات الألعاب والهدايا الرقمية">
+<title>VEXORA | بطاقات الألعاب والمتجر الرقمي</title>
+<style>
+:root{--bg:#070b13;--panel:#0d1422;--panel2:#101b2d;--line:#20314a;--blue:#168bff;--cyan:#39d8ff;--text:#f4f8ff;--muted:#9aaac0;--green:#41e0ae}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#10294b 0,transparent 38%),var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}button,input{font:inherit}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(7,11,19,.88);backdrop-filter:blur(16px);border-bottom:1px solid #1b2940}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:24px;letter-spacing:2px;direction:ltr}.logo{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(145deg,#152c4c,#060a12);border:1px solid #278cff;box-shadow:0 0 24px #087bff35;color:#fff;font-size:27px;font-weight:900;clip-path:none}.brand span{color:var(--cyan)}.links{display:flex;gap:24px;color:#c2cde0;font-size:14px}.links a:hover{color:var(--cyan)}.cart{border:1px solid #2a3c57;background:#101b2b;color:white;padding:9px 14px;border-radius:12px;cursor:pointer}.cart b{color:var(--cyan)}
+.hero{padding:64px 0 44px;display:grid;grid-template-columns:1.05fr .95fr;gap:32px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid #20456c;background:#0c1c30;color:#8ddcff;padding:7px 12px;border-radius:99px;font-size:13px}.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green)}h1{font-size:clamp(34px,5vw,58px);line-height:1.18;margin:18px 0 14px;font-weight:900}h1 em{font-style:normal;color:var(--cyan);text-shadow:0 0 25px #0a8bff55}.lead{color:var(--muted);font-size:17px;max-width:520px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}.btn{border:0;border-radius:13px;padding:13px 20px;font-weight:800;cursor:pointer;transition:.2s}.primary{color:white;background:linear-gradient(100deg,#0877f9,#21baff);box-shadow:0 9px 28px #087bff30}.primary:hover{transform:translateY(-2px);filter:brightness(1.1)}.secondary{background:#101a29;border:1px solid #2b3e58;color:#eaf4ff}.hero-card{min-height:320px;position:relative;overflow:hidden;border:1px solid #1c4166;border-radius:28px;padding:28px;background:linear-gradient(140deg,#122d50,#0b1321 62%,#07101b);box-shadow:0 22px 70px #0007}.hero-card:before{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:#087dff2b;filter:blur(10px);left:-45px;top:-45px}.big-v{position:absolute;left:22px;top:14px;font-size:170px;line-height:1;color:#ffffff0b;font-weight:900;transform:skew(-10deg)}.hero-card h2{position:relative;font-size:27px;margin:10px 0}.hero-card p{position:relative;color:#b9cbe1;max-width:320px}.mini-stats{position:relative;display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}.mini-stats span{background:#08111edb;border:1px solid #29415f;border-radius:12px;padding:10px 12px;font-size:12px;color:#d5e7fb}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:8px auto 55px}.trust div{border:1px solid #1c2b41;background:#0b121e;border-radius:15px;padding:17px;display:flex;gap:12px;align-items:center}.trust strong{display:block;font-size:14px}.trust small{color:var(--muted);font-size:12px}.ico{font-size:23px;color:var(--cyan)}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:35px 0 18px}.section-head h2{margin:0;font-size:27px}.section-head p{margin:4px 0 0;color:var(--muted);font-size:14px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.filter{border:1px solid #263952;background:#0d1522;color:#b8c8dc;border-radius:999px;padding:8px 14px;cursor:pointer}.filter.active,.filter:hover{background:#0b3b69;border-color:#168bff;color:white}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.product{background:linear-gradient(160deg,#111d30,#0b111d);border:1px solid #1e3048;border-radius:19px;padding:15px;min-width:0;transition:.2s}.product:hover{transform:translateY(-3px);border-color:#2778bc}.art{height:125px;border-radius:14px;display:grid;place-items:center;position:relative;overflow:hidden;margin-bottom:13px;background:radial-gradient(circle at 50% 10%,#32629b,#101a2b 65%)}.art:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#07101b88,transparent)}.art .symbol{font-size:40px;font-weight:900;text-shadow:0 5px 20px #000;position:relative;z-index:1}.art.pubg{background:radial-gradient(circle at 70% 20%,#9b6a24,#291b13 72%)}.art.fortnite{background:radial-gradient(circle at 70% 20%,#6739c5,#17152d 72%)}.art.google{background:radial-gradient(circle at 70% 20%,#187c7b,#101d2b 72%)}.art.roblox{background:radial-gradient(circle at 70% 20%,#596578,#151b27 72%)}.tag{position:absolute;top:9px;right:9px;z-index:2;font-size:10px;background:#07101ddd;border:1px solid #304760;border-radius:99px;padding:4px 7px}.product h3{font-size:15px;margin:4px 0}.desc{font-size:12px;color:var(--muted);min-height:38px}.price-row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:14px}.price{font-size:18px;font-weight:900;direction:ltr}.price small{font-size:10px;color:var(--muted)}.buy{width:100%;margin-top:12px;padding:10px;border-radius:11px;font-size:13px}
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0 55px}.step{border:1px solid #1c2c42;border-radius:16px;padding:20px;background:#0b121e}.step b{display:grid;place-items:center;width:34px;height:34px;background:#102c4a;color:var(--cyan);border-radius:10px;margin-bottom:12px}.step h3{margin:0 0 6px;font-size:16px}.step p{margin:0;color:var(--muted);font-size:13px}
+.notice{border:1px solid #31516f;background:#0c1b2b;border-radius:16px;padding:16px;color:#c4d8ec;font-size:13px;margin:25px 0 45px}.notice strong{color:#fff}
+footer{border-top:1px solid #1a293e;padding:25px 0 35px;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.foot .brand{font-size:18px}
+.modal-backdrop{position:fixed;inset:0;background:#000b;z-index:30;display:none;align-items:center;justify-content:center;padding:18px}.modal-backdrop.show{display:flex}.modal{width:min(460px,100%);background:#0e1725;border:1px solid #2b4564;border-radius:20px;padding:23px;box-shadow:0 30px 90px #0009}.modal h2{margin:0 0 8px}.modal p{color:var(--muted);font-size:14px}.modal label{display:block;font-size:13px;margin:13px 0 6px;color:#dce8f8}.modal input,.modal select{width:100%;padding:12px;background:#080f1a;border:1px solid #2b3d56;border-radius:10px;color:white}.modal-actions{display:flex;gap:10px;margin-top:17px}.modal-actions button{flex:1}.close{float:left;background:transparent;color:#b9c8dc;border:0;font-size:23px;cursor:pointer}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#102b45;border:1px solid #2b6da2;color:#fff;padding:12px 18px;border-radius:12px;z-index:50;display:none;max-width:90%;font-size:13px}.toast.show{display:block}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:40px}.hero-card{min-height:260px}.trust{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.links{display:none}.how{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.nav{height:66px}}
+@media(max-width:380px){.products{grid-template-columns:1fr}.art{height:145px}.brand{font-size:20px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#"><div class="logo">V</div><div>VE<span>X</span>ORA</div></a>
+<nav class="links"><a href="#products">المتجر</a><a href="#how">كيف تشتري؟</a><a href="#payments">طرق الدفع</a></nav>
+<button class="cart" id="cartBtn">🛒 السلة <b id="cartCount">0</b></button>
+</div></header>
+<main class="wrap">
+<section class="hero">
+<div>
+<div class="eyebrow"><i class="dot"></i> عالمك الرقمي يبدأ من هون</div>
+<h1>اشحن لعبتك.<br><em>عيش التجربة.</em></h1>
+<p class="lead">VEXORA متجر بطاقات الألعاب والهدايا الرقمية — واجهة واحدة سهلة، مرتبة، ومصممة للاعبين.</p>
+<div class="actions"><a class="btn primary" href="#products">تصفح البطاقات <span>←</span></a><a class="btn secondary" href="#how">كيف أطلب؟</a></div>
+<div style="color:#8295ad;font-size:12px">PUBG MOBILE · FORTNITE · GOOGLE PLAY · ROBLOX</div>
+</div>
+<div class="hero-card"><div class="big-v">V</div><div class="eyebrow">VEXORA DIGITAL STORE</div><h2>كل بطاقاتك المفضلة<br>بمكان واحد</h2><p>تصميم عصري وتجربة شراء واضحة، على الموبايل والكمبيوتر.</p><div class="mini-stats"><span>⚡ طلب سهل</span><span>🎮 ألعاب متنوعة</span><span>🌐 واجهة عربية</span></div></div>
+</section>
+<section class="trust">
+<div><span class="ico">🛡</span><span><strong>طلب واضح</strong><small>راجع تفاصيل طلبك قبل التأكيد</small></span></div>
+<div><span class="ico">⚡</span><span><strong>واجهة سريعة</strong><small>مصممة لتناسب شاشة الموبايل</small></span></div>
+<div><span class="ico">🌍</span><span><strong>متجر قابل للتوسع</strong><small>إضافة بطاقات وخيارات جديدة لاحقاً</small></span></div>
+</section>
+<section id="products">
+<div class="section-head"><div><h2>البطاقات الشائعة</h2><p>اختار المنتج لتبدأ تجهيز طلبك.</p></div></div>
+<div class="filters" id="filters"><button class="filter active" data-filter="all">الكل</button><button class="filter" data-filter="games">بطاقات الألعاب</button><button class="filter" data-filter="gift">بطاقات الهدايا</button></div>
+<div class="products" id="productGrid">
+<article class="product" data-category="games" data-name="PUBG Mobile UC"><div class="art pubg"><span class="tag">الأكثر طلباً</span><span class="symbol">PUBG</span></div><h3>PUBG Mobile UC</h3><div class="desc">شدّات ببجي موبايل</div><div class="price-row"><span class="price">يُحدد لاحقاً</span></div><button class="btn primary buy" data-product="PUBG Mobile UC">اطلب الآن ↗</button></article>
+<article class="product" data-category="games" data-name="Fortnite V-Bucks"><div class="art fortnite"><span class="tag">Gaming</span><span class="symbol">V-BUCKS</span></div><h3>Fortnite V-Bucks</h3><div class="desc">بطاقات فورتنايت</div><div class="price-row"><span class="price">يُحدد لاحقاً</span></div><button class="btn primary buy" data-product="Fortnite V-Bucks">اطلب الآن ↗</button></article>
+<article class="product" data-category="gift" data-name="Google Play Gift Card"><div class="art google"><span class="tag">Digital Gift</span><span class="symbol">▶ Google</span></div><h3>Google Play Gift Card</h3><div class="desc">بطاقات متجر Google Play</div><div class="price-row"><span class="price">يُحدد لاحقاً</span></div><button class="btn primary buy" data-product="Google Play Gift Card">اطلب الآن ↗</button></article>
+<article class="product" data-category="games" data-name="Roblox Gift Card"><div class="art roblox"><span class="tag">Popular</span><span class="symbol">ROBLOX</span></div><h3>Roblox Gift Card</h3><div class="desc">بطاقات روبلوكس الرقمية</div><div class="price-row"><span class="price">يُحدد لاحقاً</span></div><button class="btn primary buy" data-product="Roblox Gift Card">اطلب الآن ↗</button></article>
+</div>
+</section>
+<section id="how">
+<div class="section-head"><div><h2>كيف تطلب؟</h2><p>خطوات بسيطة — قبل تفعيل الدفع الإلكتروني بشكل رسمي.</p></div></div>
+<div class="how">
+<div class="step"><b>01</b><h3>اختار البطاقة</h3><p>حدد المنتج الذي تحتاجه من قائمة المتجر.</p></div>
+<div class="step"><b>02</b><h3>أرسل تفاصيل الطلب</h3><p>اكتب وسيلة التواصل والمنطقة المطلوبة لتجهيز الطلب.</p></div>
+<div class="step"><b>03</b><h3>تأكيد السعر والتوفر</h3><p>يتم تأكيد السعر وطريقة الدفع والتسليم يدوياً قبل أي تحويل.</p></div>
+</div>
+</section>
+<div class="notice" id="payments"><strong>ملاحظة مهمة:</strong> هذه نسخة واجهة أولية للمتجر. الطلبات هنا لا تخصم أموالاً ولا تعالج الدفع تلقائياً. لا تحوّل أي مبلغ قبل تأكيد السعر والتوفر مع البائع. يمكن إضافة ربط حقيقي ببوابة دفع بعد إعداد الحسابات والموافقات اللازمة.</div>
+</main>
+<footer><div class="wrap foot"><a class="brand" href="#"><div class="logo">V</div><div>VE<span>X</span>ORA</div></a><div>© <span id="year"></span> VEXORA — Gaming & Digital Cards</div><div>واجهة تجريبية · غير متصلة ببوابة دفع</div></div></footer>
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><button class="close" id="closeModal" aria-label="إغلاق">×</button><h2 id="modalTitle">تجهيز طلب</h2><p id="chosenProduct">المنتج</p><label for="contact">وسيلة التواصل (واتساب أو بريد إلكتروني)</label><input id="contact" placeholder="اكتب وسيلة التواصل" autocomplete="off"><label for="region">بلدك / منطقتك</label><select id="region"><option>سوريا</option><option>هولندا</option><option>بلد آخر</option></select><label for="details">تفاصيل إضافية (اختياري)</label><input id="details" placeholder="مثلاً: فئة البطاقة أو الكمية"><div class="modal-actions"><button class="btn primary" id="prepareOrder">تجهيز الطلب</button><button class="btn secondary" id="cancelModal">إلغاء</button></div><p style="font-size:11px;margin-bottom:0">لن يتم إرسال بياناتك تلقائياً؛ بعد التجهيز يمكنك نسخ نص الطلب ومشاركته بنفسك.</p></div></div>
+<div class="toast" id="toast"></div>
+<script>
+const cart=[];let selectedProduct='';
+const modal=document.getElementById('modalBackdrop'), toast=document.getElementById('toast');
+function showToast(msg){toast.textContent=msg;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2600)}
+function openOrder(product){selectedProduct=product;document.getElementById('chosenProduct').textContent='المنتج المختار: '+product;modal.classList.add('show');}
+document.querySelectorAll('.buy').forEach(b=>b.addEventListener('click',()=>openOrder(b.dataset.product)));
+document.getElementById('closeModal').onclick=()=>modal.classList.remove('show');
+document.getElementById('cancelModal').onclick=()=>modal.classList.remove('show');
+modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('show')});
+document.getElementById('prepareOrder').onclick=()=>{
+ const contact=document.getElementById('contact').value.trim();
+ if(!contact){showToast('اكتب وسيلة تواصل حتى تجهّز الطلب.');document.getElementById('contact').focus();return;}
+ const region=document.getElementById('region').value, details=document.getElementById('details').value.trim();
+ const msg=`طلب من VEXORA%0Aالمنتج: ${selectedProduct}%0Aالمنطقة: ${region}%0Aالتواصل: ${contact}%0Aتفاصيل: ${details||'لا يوجد'}`;
+ const text=`طلب من VEXORA\nالمنتج: ${selectedProduct}\nالمنطقة: ${region}\nالتواصل: ${contact}\nتفاصيل: ${details||'لا يوجد'}`;
+ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(()=>showToast('تم نسخ تفاصيل الطلب — شاركها مع البائع.')).catch(()=>showToast(text));}
+ else showToast('تم تجهيز الطلب. يمكنك نسخ التفاصيل من الشاشة.');
+ cart.push(selectedProduct);document.getElementById('cartCount').textContent=cart.length;
+ modal.classList.remove('show');
+};
+document.getElementById('cartBtn').onclick=()=>{if(!cart.length){showToast('السلة فارغة حالياً — اختار بطاقة أولاً.');return;}showToast('في السلة: '+cart.join('، '));};
+document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{
+ document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));btn.classList.add('active');
+ document.querySelectorAll('.product').forEach(card=>{card.style.display=(btn.dataset.filter==='all'||card.dataset.category===btn.dataset.filter)?'':'none';});
+}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
